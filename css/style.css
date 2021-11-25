@@ -1,0 +1,26 @@
+.checkable-option {
+  padding-left: 1.5rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.checkable-option input {
+  display: none;
+}
+
+.checkable-option input:checked + label:before {
+  display: inline-block;
+}
+
+.checkable-option label:before {
+  width: 25px;
+  height: 25px;
+  content: "\2713";
+  color: blue;
+  display: none;
+  position: absolute;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

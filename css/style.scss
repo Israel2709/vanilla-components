@@ -1,0 +1,26 @@
+.checkable-option{
+    padding-left:1.5rem;
+    position: relative;
+    display: flex;
+    input{
+        display: none;
+        &:checked{
+            & + label{
+                &:before{
+                    display:inline-block;
+                }
+            }
+        }
+    }
+    label{
+        &:before{
+            width: 25px;
+            height: 25px;
+            content:"\2713";
+            color: blue;
+            display: none;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
